@@ -1,3 +1,25 @@
+.grid-container {
+  height: 200px;
+  width: 600px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+}
+.p {
+  margin-left: 200px; 
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.pic {
+  min-height: 100px;
+  
+}
+
+
+
 /* about me */
 .text-container {
     position: absolute;
@@ -10,12 +32,14 @@
     font-size: 26px;
     margin-top: 40px;
     padding: 10px;
-    padding-left: 100px;
+    padding-left: 300px;
     padding-right: 100px;
+    text-align: center;
 }
 p {
     margin: 0 0 10px;
 }
+
 
 
 body {
