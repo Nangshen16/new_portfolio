@@ -4,7 +4,7 @@
     z-index: 1;
     text-align: center;
 }
-.Me {
+.pageHeader {
     color:#870A30;
     font-family: 'Old Standard TT', serif;
     font-size: 26px;
@@ -146,4 +146,9 @@ body {
 .fa.fa-linkedin {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
+}
+.projectImage {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
 }
