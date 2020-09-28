@@ -1,11 +1,30 @@
-#grid-container {
-  height: 200px;
+.skillsIcons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+ align-content: center; 
+}
+.skills{
+  background-color: pink;
+  /* width: 23%; */
+  /* height: 100px; */
+  margin:10px;
+}
+.skills img{
+   width: 180px;
+   height: 180px;
+
+}
+
+.aboutMe {
+  
   width: 600px;
   display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: space-between;
 }
 .p {
   margin-left: 200px; 
@@ -13,11 +32,16 @@
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
 }
+#aboutText{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
 div.pic {
   min-height: 100px;
 
 }
-.sidebox {
+/* .sidebox {
   height: 200px;
   width: 600px;
   display:flex;
@@ -25,7 +49,8 @@ div.pic {
   justify-content: space-around;
   align-items: center;
   align-content: space-between;
-}
+} */
+
 
 
 
@@ -41,7 +66,7 @@ div.pic {
     font-size: 26px;
     margin-top: 40px;
     padding: 10px;
-    padding-left: 300px;
+    padding-left: 100px;
     padding-right: 100px;
     text-align: center;
 }
@@ -52,11 +77,16 @@ p {
 
 
 body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color:pink;
   }
   header {
+    width: 100%;
     padding: 20px 0;
     background: repeating-linear-gradient(45deg, #f0f2ed, #f0f2ed 20px, #f8f4eb 20px, #f8f4eb 40px);
     box-shadow: 0 4px 6px rgba(0,0,0,.2);  
@@ -65,6 +95,9 @@ body {
     padding: 0 20px;
     max-width: 960px;
     margin: 0 auto;
+  }
+  iframe {
+    width:640px;
   }
   .logo-box {
     float: left;
@@ -112,7 +145,7 @@ body {
   }
   nav a:hover:after {width: 100%;}
   
-  @media screen and (max-width: 660px) {
+  @media screen and (max-width: 600px) {
     header {text-align: center;}
     .logo-box {
       float: none;
@@ -121,8 +154,17 @@ body {
     }
     ul {float: none;}
     nav li:first-of-type {margin-left: 0;}
+  
+  .aboutMe{
+    width: 80%;
+    
   }
-  @media screen and (max-width: 550px) {
+  #aboutText{
+    font-size: 16px;
+  }
+  iframe {
+    width:80%;
+  }
   nav {overflow: visible;}
   nav li {
     display: block;
@@ -142,9 +184,12 @@ body {
       
   } */
   .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     bottom: 0;
     color: #707070;
-    height: 2em;
+    /* height: 2em; */
     left: 0;
     position: relative; 
     font-size: small;
@@ -153,6 +198,8 @@ body {
 
   .footer p {
       font-size: .75rem;
+      padding: 10px;
+      margin: 0px;
   }
   /* p {
     display: block;
@@ -181,9 +228,10 @@ body {
     font-weight: 400;
 }
 .projectImage {
-  height: 120px;
-  width: 120px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
+  margin: 5px;
 }
 .freebirdFormviewerViewCenteredContent{
   display: flex;
@@ -195,4 +243,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+}
+.slider{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 10px;
 }
