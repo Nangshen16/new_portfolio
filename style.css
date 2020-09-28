@@ -61,7 +61,7 @@ div.pic {
     text-align: center;
 }
 .pageHeader {
-    color:#870A30;
+    color:#05445E;
     font-family: 'Old Standard TT', serif;
     font-size: 26px;
     margin-top: 40px;
@@ -197,7 +197,7 @@ body {
 }
 
   .footer p {
-      font-size: .75rem;
+      font-size: 16px;
       padding: 10px;
       margin: 0px;
   }
@@ -215,12 +215,14 @@ body {
     align-items: center;
 }
 .footer ul li {
+    font-size: 25px;
     padding: 10px;
     list-style: none;
 }
 .footer ul li a {
     margin: 0 10px;
-    color: white;
+    color:black;
+    
 }
 
 .fa.fa-linkedin {
