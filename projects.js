@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (projects[i].description) {
                 $div.append($(`<p>`).text(projects[i].description))
             }
+            if (projects[i].url) {
+                $div.append($(`<a>`).attr(`href`,projects[i].url).text(`Link`))
+            }
             /*$div.append($(`<img>`).attr(`src`,projects[i].image))*/
 
             $(`.projectsSlides`).append($div)
